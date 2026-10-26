@@ -1,0 +1,19 @@
+npm notice run kurio@1.0.0 test:unit
+npm notice run node --experimental-strip-types --test src/mocks/lib/password.test.ts src/shared/lib/eth.test.ts src/shared/api/validation.test.ts
+▶ password
+  ✔ hashes Alice123! to the known fixture digest (9.116029ms)
+  ✔ hashes Bob1234! to the known fixture digest (0.930897ms)
+  ✔ verifies matching plain and rejects mismatch (0.785077ms)
+✔ password (11.915699ms)
+✔ API e formulário rejeitam frações, valores não positivos e cadastro inválido (2.286892ms)
+✔ carteira depende da rede e pedido exige cotação explícita (1.819234ms)
+✔ preserva wei e descontos sem converter ETH para ponto flutuante (1.169555ms)
+✔ apresentação mantém toda a precisão da cotação (1.036686ms)
+ℹ tests 7
+ℹ suites 1
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 160.665147

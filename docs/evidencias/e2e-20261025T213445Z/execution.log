@@ -1,0 +1,466 @@
+npm notice run kurio@1.0.0 test:e2e
+npm notice run playwright test --output=docs/evidencias/e2e-20261025T213445Z/traces
+
+Running 155 tests using 1 worker
+
+(node:236784) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    1 [chromium-desktop] › e2e/account-a11y.spec.ts:10:3 › Perfil, carteiras e a11y › editar perfil e carteira (3.3s)
+  ✓    2 [chromium-desktop] › e2e/account-a11y.spec.ts:34:3 › Perfil, carteiras e a11y › senha e validação no perfil (1.8s)
+  ✓    3 [chromium-desktop] › e2e/account-a11y.spec.ts:49:3 › Perfil, carteiras e a11y › avatar via upload (1.5s)
+  ✓    4 [chromium-desktop] › e2e/account-a11y.spec.ts:74:3 › Login a11y (guest) › navegação por teclado e validação no login (970ms)
+  -    5 [chromium-desktop] › e2e/account-a11y.spec.ts:102:1 › drawer mobile contém e devolve foco
+  ✓    6 [chromium-desktop] › e2e/auth.spec.ts:16:3 › Conta e sessão › login, logout e troca de usuário (2.4s)
+  ✓    7 [chromium-desktop] › e2e/auth.spec.ts:37:3 › Conta e sessão › cadastro com sucesso (1.6s)
+  ✓    8 [chromium-desktop] › e2e/auth.spec.ts:44:3 › Conta e sessão › cadastro com conflito (1.6s)
+  ✓    9 [chromium-desktop] › e2e/auth.spec.ts:64:3 › Conta e sessão › checkout exige autenticação (842ms)
+  ✓   10 [chromium-desktop] › e2e/auth.spec.ts:76:3 › Conta e sessão › sessão expirada limpa autenticação (1.7s)
+  ✓   11 [chromium-desktop] › e2e/cart-checkout.spec.ts:15:3 › Carrinho e compra › adicionar, cupom, persistência e compra completa (5.3s)
+  ✓   12 [chromium-desktop] › e2e/cart-checkout.spec.ts:40:3 › Carrinho e compra › quantidade, remoção e merge guest→user (2.7s)
+  ✓   13 [chromium-desktop] › e2e/cart-checkout.spec.ts:71:3 › Carrinho e compra › recusa de carteira impede confirmação (2.9s)
+  ✓   14 [chromium-desktop] › e2e/cart-checkout.spec.ts:83:3 › Carrinho e compra › cupom inválido (1.3s)
+  ✓   15 [chromium-desktop] › e2e/cart-checkout.spec.ts:92:3 › Carrinho e compra › remover cupom (1.6s)
+  ✓   16 [chromium-desktop] › e2e/cart-checkout.spec.ts:105:3 › Carrinho e compra › favoritos otimista (1.4s)
+  ✓   17 [chromium-desktop] › e2e/cart-checkout.spec.ts:116:3 › Carrinho e compra › favoritos falha e rollback (1.5s)
+  ✓   18 [chromium-desktop] › e2e/catalog.spec.ts:9:3 › Catálogo › busca, filtros combinados, ordenação, paginação e histórico (2.4s)
+  ✓   19 [chromium-desktop] › e2e/catalog.spec.ts:73:3 › Catálogo › detalhe inexistente (1.8s)
+  ✓   20 [chromium-desktop] › e2e/catalog.spec.ts:78:3 › Catálogo › acesso direto ao detalhe (629ms)
+  ✓   21 [chromium-desktop] › e2e/catalog.spec.ts:84:3 › Catálogo › falha de catálogo e recuperação (2.0s)
+  ✓   22 [chromium-desktop] › e2e/contracts.spec.ts:8:1 › pedidos: isolamento, idempotência e conteúdo diferente (1.1s)
+  ✓   23 [chromium-desktop] › e2e/contracts.spec.ts:23:1 › preço e taxa alterados exigem cotação nova (891ms)
+  ✓   24 [chromium-desktop] › e2e/contracts.spec.ts:35:1 › estoque, cupom e quantidades inválidas bloqueiam compra (992ms)
+  ✓   25 [chromium-desktop] › e2e/contracts.spec.ts:43:1 › recibo imutável, edição correta e estoque persistente (1.4s)
+  ✓   26 [chromium-desktop] › e2e/contracts.spec.ts:64:1 › cadastro migra carrinho guest sem apagar storage externo (624ms)
+  ✓   27 [chromium-desktop] › e2e/contracts.spec.ts:73:1 › Socket.IO conectado recebe preço real; desconexão e replay (898ms)
+  ✓   28 [chromium-desktop] › e2e/contracts.spec.ts:89:1 › checkout reage ao preço novo via socket e exige aceite (3.1s)
+  ✓   29 [chromium-desktop] › e2e/contracts.spec.ts:102:3 › refresh recupera settlement default com relógio controlado (1.2s)
+  ✓   30 [chromium-desktop] › e2e/contracts.spec.ts:102:3 › refresh recupera settlement payment-rejected com relógio controlado (1.1s)
+  ✓   31 [chromium-desktop] › e2e/contracts.spec.ts:118:1 › mesmo total com preço e taxa diferentes exige outra revisão (908ms)
+  ✓   32 [chromium-desktop] › e2e/realtime-failures.spec.ts:17:3 › Tempo real e falhas › skeleton em carregamento lento (2.9s)
+  ✓   33 [chromium-desktop] › e2e/realtime-failures.spec.ts:25:3 › Tempo real e falhas › pagamento recusado (4.9s)
+  ✓   34 [chromium-desktop] › e2e/realtime-failures.spec.ts:35:3 › Tempo real e falhas › price-changed no checkout bloqueia confirmação (2.9s)
+  ✓   35 [chromium-desktop] › e2e/realtime-failures.spec.ts:63:3 › Tempo real e falhas › clique repetido cria um único pedido (3.1s)
+  ✓   36 [chromium-desktop] › e2e/realtime-failures.spec.ts:81:3 › Tempo real e falhas › order-timeout recupera o mesmo pedido (15.2s)
+  ✓   37 [chromium-desktop] › e2e/realtime-failures.spec.ts:103:3 › Tempo real e falhas › eventos stale e duplicados são ignorados (796ms)
+  ✓   38 [chromium-desktop] › e2e/realtime-failures.spec.ts:127:3 › Tempo real e falhas › skeleton no detalhe e resumo do carrinho (3.0s)
+  ✓   39 [chromium-desktop] › e2e/realtime-failures.spec.ts:140:3 › Tempo real e falhas › disconnect e retomada de pedido pendente (15.5s)
+  ✓   40 [chromium-desktop] › e2e/resilience.spec.ts:7:1 › mesma chave em duas contas cria pedidos independentes; carteira alheia é proibida (1.2s)
+  ✓   41 [chromium-desktop] › e2e/resilience.spec.ts:23:1 › revisão exige aceite mesmo após desfazer quantidade; cotação vence por relógio (1.0s)
+  ✓   42 [chromium-desktop] › e2e/resilience.spec.ts:33:1 › cupom expira entre revisão e compra (845ms)
+  ✓   43 [chromium-desktop] › e2e/resilience.spec.ts:41:1 › reserva é liberada uma vez na recusa; confirmação subtrai apenas quantidade comprada (1.3s)
+  ✓   44 [chromium-desktop] › e2e/resilience.spec.ts:58:1 › socket de Bob não recebe evento privado de Alice (1.5s)
+  ✓   45 [chromium-desktop] › e2e/resilience.spec.ts:72:1 › conexão indisponível recupera por Socket.IO ao reconectar (679ms)
+  ✓   46 [chromium-desktop] › e2e/resilience.spec.ts:82:1 › falha transitória preserva sessão e permite retry (1.6s)
+  ✓   47 [chromium-desktop] › e2e/resilience.spec.ts:94:1 › rascunho na expiração só reaparece para o mesmo usuário (7.9s)
+  ✓   48 [chromium-desktop] › e2e/resilience.spec.ts:115:1 › busca com respostas fora de ordem mantém o filtro mais recente (3.3s)
+  ✓   49 [chromium-desktop] › e2e/resilience.spec.ts:132:1 › checkout mantém campos e foco com zoom de 200% (3.8s)
+  ✓   50 [chromium-desktop] › e2e/visual.spec.ts:10:3 › Regressão visual › início (1.5s)
+  ✓   51 [chromium-desktop] › e2e/visual.spec.ts:21:3 › Regressão visual › detalhe (1.1s)
+  ✓   52 [chromium-desktop] › e2e/visual.spec.ts:31:3 › Regressão visual › carrinho (1.4s)
+  ✓   53 [chromium-desktop] › e2e/visual.spec.ts:42:3 › Regressão visual › pagamento (2.2s)
+(node:239288) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   54 [chromium-tablet] › e2e/account-a11y.spec.ts:10:3 › Perfil, carteiras e a11y › editar perfil e carteira (3.3s)
+  ✓   55 [chromium-tablet] › e2e/account-a11y.spec.ts:34:3 › Perfil, carteiras e a11y › senha e validação no perfil (1.8s)
+  ✓   56 [chromium-tablet] › e2e/account-a11y.spec.ts:49:3 › Perfil, carteiras e a11y › avatar via upload (1.4s)
+  ✓   57 [chromium-tablet] › e2e/account-a11y.spec.ts:74:3 › Login a11y (guest) › navegação por teclado e validação no login (912ms)
+  -   58 [chromium-tablet] › e2e/account-a11y.spec.ts:102:1 › drawer mobile contém e devolve foco
+  ✓   59 [chromium-tablet] › e2e/auth.spec.ts:16:3 › Conta e sessão › login, logout e troca de usuário (2.4s)
+  ✓   60 [chromium-tablet] › e2e/auth.spec.ts:37:3 › Conta e sessão › cadastro com sucesso (1.6s)
+  ✓   61 [chromium-tablet] › e2e/auth.spec.ts:44:3 › Conta e sessão › cadastro com conflito (1.5s)
+  ✓   62 [chromium-tablet] › e2e/auth.spec.ts:64:3 › Conta e sessão › checkout exige autenticação (797ms)
+  ✓   63 [chromium-tablet] › e2e/auth.spec.ts:76:3 › Conta e sessão › sessão expirada limpa autenticação (1.7s)
+  ✓   64 [chromium-tablet] › e2e/cart-checkout.spec.ts:15:3 › Carrinho e compra › adicionar, cupom, persistência e compra completa (5.2s)
+  ✓   65 [chromium-tablet] › e2e/cart-checkout.spec.ts:40:3 › Carrinho e compra › quantidade, remoção e merge guest→user (2.8s)
+  ✓   66 [chromium-tablet] › e2e/cart-checkout.spec.ts:71:3 › Carrinho e compra › recusa de carteira impede confirmação (2.9s)
+  ✓   67 [chromium-tablet] › e2e/cart-checkout.spec.ts:83:3 › Carrinho e compra › cupom inválido (1.2s)
+  ✓   68 [chromium-tablet] › e2e/cart-checkout.spec.ts:92:3 › Carrinho e compra › remover cupom (1.5s)
+  ✓   69 [chromium-tablet] › e2e/cart-checkout.spec.ts:105:3 › Carrinho e compra › favoritos otimista (1.3s)
+  ✓   70 [chromium-tablet] › e2e/cart-checkout.spec.ts:116:3 › Carrinho e compra › favoritos falha e rollback (1.4s)
+  ✓   71 [chromium-tablet] › e2e/catalog.spec.ts:9:3 › Catálogo › busca, filtros combinados, ordenação, paginação e histórico (2.4s)
+  ✓   72 [chromium-tablet] › e2e/catalog.spec.ts:73:3 › Catálogo › detalhe inexistente (1.8s)
+  ✓   73 [chromium-tablet] › e2e/catalog.spec.ts:78:3 › Catálogo › acesso direto ao detalhe (598ms)
+  ✓   74 [chromium-tablet] › e2e/catalog.spec.ts:84:3 › Catálogo › falha de catálogo e recuperação (2.0s)
+  ✓   75 [chromium-tablet] › e2e/contracts.spec.ts:8:1 › pedidos: isolamento, idempotência e conteúdo diferente (1.1s)
+  ✓   76 [chromium-tablet] › e2e/contracts.spec.ts:23:1 › preço e taxa alterados exigem cotação nova (842ms)
+  ✓   77 [chromium-tablet] › e2e/contracts.spec.ts:35:1 › estoque, cupom e quantidades inválidas bloqueiam compra (944ms)
+  ✓   78 [chromium-tablet] › e2e/contracts.spec.ts:43:1 › recibo imutável, edição correta e estoque persistente (1.3s)
+  ✓   79 [chromium-tablet] › e2e/contracts.spec.ts:64:1 › cadastro migra carrinho guest sem apagar storage externo (600ms)
+  ✓   80 [chromium-tablet] › e2e/contracts.spec.ts:73:1 › Socket.IO conectado recebe preço real; desconexão e replay (829ms)
+  ✓   81 [chromium-tablet] › e2e/contracts.spec.ts:89:1 › checkout reage ao preço novo via socket e exige aceite (2.9s)
+  ✓   82 [chromium-tablet] › e2e/contracts.spec.ts:102:3 › refresh recupera settlement default com relógio controlado (979ms)
+  ✓   83 [chromium-tablet] › e2e/contracts.spec.ts:102:3 › refresh recupera settlement payment-rejected com relógio controlado (977ms)
+  ✓   84 [chromium-tablet] › e2e/contracts.spec.ts:118:1 › mesmo total com preço e taxa diferentes exige outra revisão (873ms)
+  ✓   85 [chromium-tablet] › e2e/realtime-failures.spec.ts:17:3 › Tempo real e falhas › skeleton em carregamento lento (2.8s)
+  ✓   86 [chromium-tablet] › e2e/realtime-failures.spec.ts:25:3 › Tempo real e falhas › pagamento recusado (4.9s)
+  ✓   87 [chromium-tablet] › e2e/realtime-failures.spec.ts:35:3 › Tempo real e falhas › price-changed no checkout bloqueia confirmação (2.8s)
+  ✓   88 [chromium-tablet] › e2e/realtime-failures.spec.ts:63:3 › Tempo real e falhas › clique repetido cria um único pedido (3.1s)
+  ✓   89 [chromium-tablet] › e2e/realtime-failures.spec.ts:81:3 › Tempo real e falhas › order-timeout recupera o mesmo pedido (15.2s)
+  ✓   90 [chromium-tablet] › e2e/realtime-failures.spec.ts:103:3 › Tempo real e falhas › eventos stale e duplicados são ignorados (741ms)
+  ✓   91 [chromium-tablet] › e2e/realtime-failures.spec.ts:127:3 › Tempo real e falhas › skeleton no detalhe e resumo do carrinho (3.0s)
+  ✓   92 [chromium-tablet] › e2e/realtime-failures.spec.ts:140:3 › Tempo real e falhas › disconnect e retomada de pedido pendente (15.4s)
+  ✓   93 [chromium-tablet] › e2e/resilience.spec.ts:7:1 › mesma chave em duas contas cria pedidos independentes; carteira alheia é proibida (1.1s)
+  ✓   94 [chromium-tablet] › e2e/resilience.spec.ts:23:1 › revisão exige aceite mesmo após desfazer quantidade; cotação vence por relógio (985ms)
+  ✓   95 [chromium-tablet] › e2e/resilience.spec.ts:33:1 › cupom expira entre revisão e compra (815ms)
+  ✓   96 [chromium-tablet] › e2e/resilience.spec.ts:41:1 › reserva é liberada uma vez na recusa; confirmação subtrai apenas quantidade comprada (1.3s)
+  ✓   97 [chromium-tablet] › e2e/resilience.spec.ts:58:1 › socket de Bob não recebe evento privado de Alice (1.4s)
+  ✓   98 [chromium-tablet] › e2e/resilience.spec.ts:72:1 › conexão indisponível recupera por Socket.IO ao reconectar (645ms)
+  ✓   99 [chromium-tablet] › e2e/resilience.spec.ts:82:1 › falha transitória preserva sessão e permite retry (1.6s)
+  ✓  100 [chromium-tablet] › e2e/resilience.spec.ts:94:1 › rascunho na expiração só reaparece para o mesmo usuário (7.8s)
+  ✓  101 [chromium-tablet] › e2e/resilience.spec.ts:115:1 › busca com respostas fora de ordem mantém o filtro mais recente (3.2s)
+  ✓  102 [chromium-tablet] › e2e/resilience.spec.ts:132:1 › checkout mantém campos e foco com zoom de 200% (3.0s)
+(node:241136) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  103 [chromium-mobile] › e2e/account-a11y.spec.ts:10:3 › Perfil, carteiras e a11y › editar perfil e carteira (3.3s)
+  ✓  104 [chromium-mobile] › e2e/account-a11y.spec.ts:34:3 › Perfil, carteiras e a11y › senha e validação no perfil (1.7s)
+  ✓  105 [chromium-mobile] › e2e/account-a11y.spec.ts:49:3 › Perfil, carteiras e a11y › avatar via upload (1.5s)
+  ✓  106 [chromium-mobile] › e2e/account-a11y.spec.ts:74:3 › Login a11y (guest) › navegação por teclado e validação no login (1.1s)
+  ✓  107 [chromium-mobile] › e2e/account-a11y.spec.ts:102:1 › drawer mobile contém e devolve foco (690ms)
+  ✓  108 [chromium-mobile] › e2e/auth.spec.ts:16:3 › Conta e sessão › login, logout e troca de usuário (2.6s)
+  ✓  109 [chromium-mobile] › e2e/auth.spec.ts:37:3 › Conta e sessão › cadastro com sucesso (1.7s)
+  ✓  110 [chromium-mobile] › e2e/auth.spec.ts:44:3 › Conta e sessão › cadastro com conflito (1.5s)
+  ✓  111 [chromium-mobile] › e2e/auth.spec.ts:64:3 › Conta e sessão › checkout exige autenticação (839ms)
+  ✓  112 [chromium-mobile] › e2e/auth.spec.ts:76:3 › Conta e sessão › sessão expirada limpa autenticação (1.9s)
+  ✓  113 [chromium-mobile] › e2e/cart-checkout.spec.ts:15:3 › Carrinho e compra › adicionar, cupom, persistência e compra completa (5.3s)
+  ✓  114 [chromium-mobile] › e2e/cart-checkout.spec.ts:40:3 › Carrinho e compra › quantidade, remoção e merge guest→user (2.7s)
+  ✓  115 [chromium-mobile] › e2e/cart-checkout.spec.ts:71:3 › Carrinho e compra › recusa de carteira impede confirmação (2.7s)
+  ✓  116 [chromium-mobile] › e2e/cart-checkout.spec.ts:83:3 › Carrinho e compra › cupom inválido (1.3s)
+  ✓  117 [chromium-mobile] › e2e/cart-checkout.spec.ts:92:3 › Carrinho e compra › remover cupom (1.6s)
+  ✓  118 [chromium-mobile] › e2e/cart-checkout.spec.ts:105:3 › Carrinho e compra › favoritos otimista (1.5s)
+  ✓  119 [chromium-mobile] › e2e/cart-checkout.spec.ts:116:3 › Carrinho e compra › favoritos falha e rollback (1.6s)
+  ✓  120 [chromium-mobile] › e2e/catalog.spec.ts:9:3 › Catálogo › busca, filtros combinados, ordenação, paginação e histórico (2.5s)
+  ✓  121 [chromium-mobile] › e2e/catalog.spec.ts:73:3 › Catálogo › detalhe inexistente (1.8s)
+  ✓  122 [chromium-mobile] › e2e/catalog.spec.ts:78:3 › Catálogo › acesso direto ao detalhe (696ms)
+  ✓  123 [chromium-mobile] › e2e/catalog.spec.ts:84:3 › Catálogo › falha de catálogo e recuperação (2.1s)
+  ✓  124 [chromium-mobile] › e2e/contracts.spec.ts:8:1 › pedidos: isolamento, idempotência e conteúdo diferente (1.2s)
+  ✓  125 [chromium-mobile] › e2e/contracts.spec.ts:23:1 › preço e taxa alterados exigem cotação nova (1.0s)
+  ✓  126 [chromium-mobile] › e2e/contracts.spec.ts:35:1 › estoque, cupom e quantidades inválidas bloqueiam compra (1.1s)
+  ✓  127 [chromium-mobile] › e2e/contracts.spec.ts:43:1 › recibo imutável, edição correta e estoque persistente (1.5s)
+  ✓  128 [chromium-mobile] › e2e/contracts.spec.ts:64:1 › cadastro migra carrinho guest sem apagar storage externo (797ms)
+  ✓  129 [chromium-mobile] › e2e/contracts.spec.ts:73:1 › Socket.IO conectado recebe preço real; desconexão e replay (914ms)
+  ✘  130 [chromium-mobile] › e2e/contracts.spec.ts:89:1 › checkout reage ao preço novo via socket e exige aceite (1.0m)
+(node:243252) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  131 [chromium-mobile] › e2e/contracts.spec.ts:102:3 › refresh recupera settlement default com relógio controlado (1.2s)
+  ✓  132 [chromium-mobile] › e2e/contracts.spec.ts:102:3 › refresh recupera settlement payment-rejected com relógio controlado (1.2s)
+  ✓  133 [chromium-mobile] › e2e/contracts.spec.ts:118:1 › mesmo total com preço e taxa diferentes exige outra revisão (1.1s)
+  ✓  134 [chromium-mobile] › e2e/realtime-failures.spec.ts:17:3 › Tempo real e falhas › skeleton em carregamento lento (3.0s)
+  ✓  135 [chromium-mobile] › e2e/realtime-failures.spec.ts:25:3 › Tempo real e falhas › pagamento recusado (4.9s)
+  ✘  136 [chromium-mobile] › e2e/realtime-failures.spec.ts:35:3 › Tempo real e falhas › price-changed no checkout bloqueia confirmação (1.0m)
+(node:243815) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  137 [chromium-mobile] › e2e/realtime-failures.spec.ts:63:3 › Tempo real e falhas › clique repetido cria um único pedido (3.2s)
+  ✓  138 [chromium-mobile] › e2e/realtime-failures.spec.ts:81:3 › Tempo real e falhas › order-timeout recupera o mesmo pedido (15.2s)
+  ✓  139 [chromium-mobile] › e2e/realtime-failures.spec.ts:103:3 › Tempo real e falhas › eventos stale e duplicados são ignorados (855ms)
+  ✓  140 [chromium-mobile] › e2e/realtime-failures.spec.ts:127:3 › Tempo real e falhas › skeleton no detalhe e resumo do carrinho (3.1s)
+  ✓  141 [chromium-mobile] › e2e/realtime-failures.spec.ts:140:3 › Tempo real e falhas › disconnect e retomada de pedido pendente (15.5s)
+  ✓  142 [chromium-mobile] › e2e/resilience.spec.ts:7:1 › mesma chave em duas contas cria pedidos independentes; carteira alheia é proibida (1.4s)
+  ✓  143 [chromium-mobile] › e2e/resilience.spec.ts:23:1 › revisão exige aceite mesmo após desfazer quantidade; cotação vence por relógio (1.2s)
+  ✓  144 [chromium-mobile] › e2e/resilience.spec.ts:33:1 › cupom expira entre revisão e compra (1.0s)
+  ✓  145 [chromium-mobile] › e2e/resilience.spec.ts:41:1 › reserva é liberada uma vez na recusa; confirmação subtrai apenas quantidade comprada (1.5s)
+  ✓  146 [chromium-mobile] › e2e/resilience.spec.ts:58:1 › socket de Bob não recebe evento privado de Alice (1.4s)
+  ✓  147 [chromium-mobile] › e2e/resilience.spec.ts:72:1 › conexão indisponível recupera por Socket.IO ao reconectar (735ms)
+  ✓  148 [chromium-mobile] › e2e/resilience.spec.ts:82:1 › falha transitória preserva sessão e permite retry (1.6s)
+  ✘  149 [chromium-mobile] › e2e/resilience.spec.ts:94:1 › rascunho na expiração só reaparece para o mesmo usuário (1.0m)
+(node:244761) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  150 [chromium-mobile] › e2e/resilience.spec.ts:115:1 › busca com respostas fora de ordem mantém o filtro mais recente (3.3s)
+  ✓  151 [chromium-mobile] › e2e/resilience.spec.ts:132:1 › checkout mantém campos e foco com zoom de 200% (6.9s)
+  ✓  152 [chromium-mobile] › e2e/visual.spec.ts:10:3 › Regressão visual › início (1.4s)
+  ✓  153 [chromium-mobile] › e2e/visual.spec.ts:21:3 › Regressão visual › detalhe (1.1s)
+  ✓  154 [chromium-mobile] › e2e/visual.spec.ts:31:3 › Regressão visual › carrinho (1.3s)
+  ✓  155 [chromium-mobile] › e2e/visual.spec.ts:42:3 › Regressão visual › pagamento (2.1s)
+
+
+  1) [chromium-mobile] › e2e/contracts.spec.ts:89:1 › checkout reage ao preço novo via socket e exige aceite 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: locator.click: Test timeout of 60000ms exceeded.
+    Browser logs:
+
+    <launching> /home/admin/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-NSjVUn --remote-debugging-pipe --no-startup-window
+    <launched> pid=241148
+    [pid=241148][err] [1025/183856.575845:WARNING:sandbox/policy/linux/sandbox_linux.cc:405] InitializeSandbox() called with multiple threads in process gpu-process.
+    [pid=241148][err] [1025/183856.577206:WARNING:components/dbus/xdg/portal.cc:126] Failed to register with org.freedesktop.host.portal.Registry
+    [pid=241148][err] [1025/183949.881399:INFO:CONSOLE:0] "The resource http://127.0.0.1:4173/nfts/emerald-ape-640.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source: http://127.0.0.1:4173/checkout (0)
+    [pid=241148][err] [1025/184907.175278:INFO:CONSOLE:0] "The resource http://127.0.0.1:4173/nfts/emerald-ape-640.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source: http://127.0.0.1:4173/checkout (0)
+    [pid=241148] <gracefully close start>
+    Call log:
+      - waiting for getByRole('button', { name: 'Aceitar novos valores' }).visible()
+        - locator resolved to <button type="button" class="inline-flex h-9 items-center rounded-[6px] border border-primary/50 px-3 text-xs font-medium text-primary hover:bg-primary/10">Aceitar novos valores</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <li tabindex="0" data-index="0" data-front="true" data-styled="true" class="kurio-toast" data-mounted="true" data-swiped="false" data-visible="true" data-sonner-toast="" data-promise="false" data-removed="false" data-swiping="false" data-expanded="true" data-swipe-out="false" data-rich-colors="true" data-x-position="right" data-dismissible="true" data-y-position="bottom">…</li> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+      - retrying click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <div data-description="" class="kurio-toast-description">Preço ou disponibilidade mudou. Revise sua compra.</div> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+      - retrying click action
+        - waiting 20ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <div data-title="" class="kurio-toast-title">NFT atualizado</div> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 100ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div data-description="" class="kurio-toast-description">Preço ou disponibilidade mudou. Revise sua compra.</div> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+      25 × retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <li tabindex="0" data-index="0" data-front="true" data-styled="true" class="kurio-toast" data-mounted="true" data-swiped="false" data-visible="true" data-sonner-toast="" data-promise="false" data-removed="false" data-swiping="false" data-expanded="true" data-swipe-out="false" data-rich-colors="true" data-x-position="right" data-dismissible="true" data-y-position="bottom">…</li> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <div data-description="" class="kurio-toast-description">Preço ou disponibilidade mudou. Revise sua compra.</div> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <div data-description="" class="kurio-toast-description">Preço ou disponibilidade mudou. Revise sua compra.</div> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <div data-description="" class="kurio-toast-description">Preço ou disponibilidade mudou. Revise sua compra.</div> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <li tabindex="0" data-index="0" data-front="true" data-styled="true" class="kurio-toast" data-mounted="true" data-swiped="false" data-visible="true" data-sonner-toast="" data-promise="false" data-removed="false" data-swiping="false" data-expanded="true" data-swipe-out="false" data-rich-colors="true" data-x-position="right" data-dismissible="true" data-y-position="bottom">…</li> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div data-description="" class="kurio-toast-description">Preço ou disponibilidade mudou. Revise sua compra.</div> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+       95 |   const confirm = page.getByRole('button', { name: 'Confirmar compra' }).locator('visible=true')
+       96 |   await expect(confirm).toBeDisabled()
+    >  97 |   await page.getByRole('button', { name: 'Aceitar novos valores' }).locator('visible=true').click()
+          |                                                                                             ^
+       98 |   await expect(confirm).toBeEnabled()
+       99 | })
+      100 |
+        at /home/admin/Documentos/justmate/jungle/e2e/contracts.spec.ts:97:93
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/evidencias/e2e-20261025T213445Z/traces/contracts-checkout-reage-a-2fefa-o-via-socket-e-exige-aceite-chromium-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/evidencias/e2e-20261025T213445Z/traces/contracts-checkout-reage-a-2fefa-o-via-socket-e-exige-aceite-chromium-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/evidencias/e2e-20261025T213445Z/traces/contracts-checkout-reage-a-2fefa-o-via-socket-e-exige-aceite-chromium-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/evidencias/e2e-20261025T213445Z/traces/contracts-checkout-reage-a-2fefa-o-via-socket-e-exige-aceite-chromium-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium-mobile] › e2e/realtime-failures.spec.ts:35:3 › Tempo real e falhas › price-changed no checkout bloqueia confirmação 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: locator.click: Test timeout of 60000ms exceeded.
+    Browser logs:
+
+    <launching> /home/admin/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-C7r2i4 --remote-debugging-pipe --no-startup-window
+    <launched> pid=243264
+    [pid=243264][err] [1025/184926.305176:WARNING:components/dbus/xdg/portal.cc:126] Failed to register with org.freedesktop.host.portal.Registry
+    [pid=243264][err] [1025/184926.310068:WARNING:sandbox/policy/linux/sandbox_linux.cc:405] InitializeSandbox() called with multiple threads in process gpu-process.
+    [pid=243264][err] [1025/184943.449216:INFO:CONSOLE:0] "The resource http://127.0.0.1:4173/nfts/emerald-ape-640.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source: http://127.0.0.1:4173/checkout (0)
+    [pid=243264] <gracefully close start>
+    Call log:
+      - waiting for getByRole('button', { name: 'Aceitar novos valores' }).visible()
+        - locator resolved to <button type="button" class="inline-flex h-9 items-center rounded-[6px] border border-primary/50 px-3 text-xs font-medium text-primary hover:bg-primary/10">Aceitar novos valores</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <li tabindex="0" data-index="0" data-front="true" data-styled="true" class="kurio-toast" data-mounted="true" data-swiped="false" data-visible="true" data-sonner-toast="" data-promise="false" data-removed="false" data-swiping="false" data-expanded="true" data-swipe-out="false" data-rich-colors="true" data-x-position="right" data-dismissible="true" data-y-position="bottom">…</li> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+      - retrying click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <div data-description="" class="kurio-toast-description">Preço ou disponibilidade mudou. Revise sua compra.</div> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+      - retrying click action
+        - waiting 20ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <div data-title="" class="kurio-toast-title">NFT atualizado</div> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 100ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div data-description="" class="kurio-toast-description">Preço ou disponibilidade mudou. Revise sua compra.</div> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+      27 × retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <li tabindex="0" data-index="0" data-front="true" data-styled="true" class="kurio-toast" data-mounted="true" data-swiped="false" data-visible="true" data-sonner-toast="" data-promise="false" data-removed="false" data-swiping="false" data-expanded="true" data-swipe-out="false" data-rich-colors="true" data-x-position="right" data-dismissible="true" data-y-position="bottom">…</li> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <div data-description="" class="kurio-toast-description">Preço ou disponibilidade mudou. Revise sua compra.</div> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <div data-description="" class="kurio-toast-description">Preço ou disponibilidade mudou. Revise sua compra.</div> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <div data-description="" class="kurio-toast-description">Preço ou disponibilidade mudou. Revise sua compra.</div> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <li tabindex="0" data-index="0" data-front="true" data-styled="true" class="kurio-toast" data-mounted="true" data-swiped="false" data-visible="true" data-sonner-toast="" data-promise="false" data-removed="false" data-swiping="false" data-expanded="true" data-swipe-out="false" data-rich-colors="true" data-x-position="right" data-dismissible="true" data-y-position="bottom">…</li> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <div data-description="" class="kurio-toast-description">Preço ou disponibilidade mudou. Revise sua compra.</div> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      55 |       page.getByRole('button', { name: 'Confirmar compra' }).locator('visible=true'),
+      56 |     ).toBeDisabled()
+    > 57 |     await page.getByRole('button', { name: 'Aceitar novos valores' }).locator('visible=true').click()
+         |                                                                                               ^
+      58 |     await expect(
+      59 |       page.getByRole('button', { name: 'Confirmar compra' }).locator('visible=true'),
+      60 |     ).toBeEnabled()
+        at /home/admin/Documentos/justmate/jungle/e2e/realtime-failures.spec.ts:57:95
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/evidencias/e2e-20261025T213445Z/traces/realtime-failures-Tempo-re-475b5-eckout-bloqueia-confirmação-chromium-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/evidencias/e2e-20261025T213445Z/traces/realtime-failures-Tempo-re-475b5-eckout-bloqueia-confirmação-chromium-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/evidencias/e2e-20261025T213445Z/traces/realtime-failures-Tempo-re-475b5-eckout-bloqueia-confirmação-chromium-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/evidencias/e2e-20261025T213445Z/traces/realtime-failures-Tempo-re-475b5-eckout-bloqueia-confirmação-chromium-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium-mobile] › e2e/resilience.spec.ts:94:1 › rascunho na expiração só reaparece para o mesmo usuário 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: locator.click: Test timeout of 60000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Confirmar compra' }).visible()
+        - locator resolved to <button type="button" class="flex h-12 w-full items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground transition hover:bg-primary/90 disabled:opacity-50">Confirmar compra</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <li tabindex="0" data-index="0" data-front="true" data-styled="true" class="kurio-toast" data-mounted="true" data-swiped="false" data-visible="true" data-type="success" data-sonner-toast="" data-promise="false" data-removed="false" data-swiping="false" data-expanded="true" data-swipe-out="false" data-rich-colors="true" data-x-position="right" data-dismissible="true" data-y-position="bottom">…</li> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <li tabindex="0" data-index="0" data-front="true" data-styled="true" class="kurio-toast" data-mounted="true" data-swiped="false" data-visible="true" data-type="success" data-sonner-toast="" data-promise="false" data-removed="false" data-swiping="false" data-expanded="true" data-swipe-out="false" data-rich-colors="true" data-x-position="right" data-dismissible="true" data-y-position="bottom">…</li> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+        - retrying click action
+          - waiting 100ms
+        37 × waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <li tabindex="0" data-index="0" data-front="true" data-styled="true" class="kurio-toast" data-mounted="true" data-swiped="false" data-visible="true" data-type="success" data-sonner-toast="" data-promise="false" data-removed="false" data-swiping="false" data-expanded="true" data-swipe-out="false" data-rich-colors="true" data-x-position="right" data-dismissible="true" data-y-position="bottom">…</li> from <section tabindex="-1" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications alt+T" data-react-aria-top-layer="true">…</section> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is not enabled
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+      - element was detached from the DOM, retrying
+
+
+       98 |   await page.locator('#display-name, #m-display-name').locator('visible=true').fill('Alice Rascunho')
+       99 |   await setScenario(page, 'session-expired')
+    > 100 |   await page.getByRole('button', { name: 'Confirmar compra' }).locator('visible=true').click()
+          |                                                                                        ^
+      101 |   await expect(page.getByRole('dialog')).toBeVisible()
+      102 |   await page.keyboard.press('Escape')
+      103 |   await setScenario(page, 'default')
+        at /home/admin/Documentos/justmate/jungle/e2e/resilience.spec.ts:100:88
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/evidencias/e2e-20261025T213445Z/traces/resilience-rascunho-na-exp-41464-parece-para-o-mesmo-usuário-chromium-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/evidencias/e2e-20261025T213445Z/traces/resilience-rascunho-na-exp-41464-parece-para-o-mesmo-usuário-chromium-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/evidencias/e2e-20261025T213445Z/traces/resilience-rascunho-na-exp-41464-parece-para-o-mesmo-usuário-chromium-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/evidencias/e2e-20261025T213445Z/traces/resilience-rascunho-na-exp-41464-parece-para-o-mesmo-usuário-chromium-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [chromium-mobile] › e2e/contracts.spec.ts:89:1 › checkout reage ao preço novo via socket e exige aceite 
+    [chromium-mobile] › e2e/realtime-failures.spec.ts:35:3 › Tempo real e falhas › price-changed no checkout bloqueia confirmação 
+    [chromium-mobile] › e2e/resilience.spec.ts:94:1 › rascunho na expiração só reaparece para o mesmo usuário 
+  2 skipped
+  150 passed (9.3m)

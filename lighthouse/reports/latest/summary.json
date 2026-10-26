@@ -1,0 +1,101 @@
+{
+  "generatedAt": "2026-10-25T21:33:39.009Z",
+  "runsPerTarget": 3,
+  "environment": {
+    "node": "v26.11.1",
+    "lighthouse": "13.5.0",
+    "chromium": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "os": "Linux 7.2.9-2-cachyos x64",
+    "cpu": "AMD Ryzen 9 3900X 12-Core Processor",
+    "logicalCpus": 24,
+    "memoryBytes": 16660066304,
+    "base": "http://127.0.0.1:4173"
+  },
+  "conditions": {
+    "scenario": "default",
+    "storage": "fresh Chrome profile per measurement",
+    "throttling": {
+      "mobile": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "desktop": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "cpuSlowdownMultiplier": 1,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0
+      }
+    },
+    "build": "production, all images/fonts/MSW/Socket.IO enabled"
+  },
+  "targets": {
+    "home": {
+      "mobile": {
+        "scores": {
+          "performance": 74,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 92
+        },
+        "metrics": {
+          "lcpMs": 5132.2804,
+          "cls": 0,
+          "tbtMs": 53
+        }
+      },
+      "desktop": {
+        "scores": {
+          "performance": 98,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 92
+        },
+        "metrics": {
+          "lcpMs": 1025.1116000000002,
+          "cls": 0.00001619096474128792,
+          "tbtMs": 0
+        }
+      }
+    },
+    "detail": {
+      "mobile": {
+        "scores": {
+          "performance": 78,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 92
+        },
+        "metrics": {
+          "lcpMs": 4450.6269,
+          "cls": 0.03289667766537054,
+          "tbtMs": 43
+        }
+      },
+      "desktop": {
+        "scores": {
+          "performance": 95,
+          "accessibility": 97,
+          "best-practices": 100,
+          "seo": 92
+        },
+        "metrics": {
+          "lcpMs": 953.8332500000001,
+          "cls": 0.1159886695906433,
+          "tbtMs": 0
+        }
+      }
+    }
+  },
+  "goals": {
+    "performance": 90,
+    "accessibility": 95,
+    "best-practices": 95,
+    "seo": 90
+  }
+}

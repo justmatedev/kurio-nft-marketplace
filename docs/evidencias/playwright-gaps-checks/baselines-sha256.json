@@ -1,0 +1,10 @@
+{
+  "e2e/visual.spec.ts-snapshots/cart-chromium-desktop-linux.png": "7a9245e3187a9f5cb01a97460b2188e094adcac0fe7e74045a52b679fe3aa0b8",
+  "e2e/visual.spec.ts-snapshots/cart-chromium-mobile-linux.png": "8a31623e2715d533e1b91a48c5e3f9aa67d7eb31e32c3b545f210a2ecad73c0f",
+  "e2e/visual.spec.ts-snapshots/checkout-chromium-desktop-linux.png": "c2007c8a782ba2f9488c4f89be528da89205638f7a59b8f26b469a7969631c05",
+  "e2e/visual.spec.ts-snapshots/checkout-chromium-mobile-linux.png": "af94764752321f09cdceb0fc2b97093cffac6728d2db7414d241dce617617367",
+  "e2e/visual.spec.ts-snapshots/detail-chromium-desktop-linux.png": "a71ed966e80beb71b0338f0d9b79fcd2f93f2d4b0db1fb3ff0a39b2fbc02bedc",
+  "e2e/visual.spec.ts-snapshots/detail-chromium-mobile-linux.png": "edcf763952774033191e3c291437c013067c783054bf2b9ece284908d35fbb77",
+  "e2e/visual.spec.ts-snapshots/home-chromium-desktop-linux.png": "fa8fc7d6dee0e11ac92ce254446f7a341b29a020b407a933b37c6d23b8430c80",
+  "e2e/visual.spec.ts-snapshots/home-chromium-mobile-linux.png": "ba4a3006d698553740052f22ffed29cf826a47a5856a213a4fd29ab8227e044e"
+}

@@ -1,0 +1,29 @@
+{
+  "recordedAt": "2026-10-25T23:36:04.983713+00:00",
+  "baseCommit": "f9f230dbd97e92ad64c7ef4186533fd652535243",
+  "sourceSha256": "e70e2d0bfd4c8c8915d7c5b2d875058cb3ebb8c401f4043d5db3a32e5436c2c0",
+  "sourceSet": "src/**, e2e/**, package*.json, vite.config.ts, playwright.config.ts, index.html",
+  "node": "v26.11.1",
+  "tools": {
+    "@playwright/test": "1.64.1",
+    "typescript": "6.0.3",
+    "vite": "8.3.5",
+    "oxlint": "1.89.0",
+    "lighthouse": "13.5.0"
+  },
+  "retries": 0,
+  "viewports": [
+    "1440x900",
+    "768x1024",
+    "390x844"
+  ],
+  "deploy": "not executed",
+  "scope": "Playwright: carteiras principal/secundária e esgotamento Socket.IO",
+  "focusedReport": null,
+  "fullReport": "docs/evidencias/playwright-gaps-full-20261025T233514Z/results.json",
+  "baselines": "unchanged in this revision",
+  "commits": "not created",
+  "push": "not performed",
+  "recordContext": "Historical execution snapshot: all environment, source, deployment and Git status fields describe recordedAt, not the current repository. baseCommit belongs to the history preceding repository consolidation; sourceSha256 is preserved as recorded.",
+  "focusedReportStatus": "The intermediate focused report is not included in the delivery. The subsequent full run is available at fullReport; its results are unchanged."
+}

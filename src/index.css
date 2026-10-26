@@ -1,0 +1,226 @@
+@import 'tailwindcss';
+
+/* Self-hosted Roboto Mono (latin + latin-ext) — no render-blocking Google Fonts CSS */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/roboto-mono-latin-ext-400.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/roboto-mono-latin-400.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/roboto-mono-latin-ext-500.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/roboto-mono-latin-500.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/roboto-mono-latin-ext-600.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/roboto-mono-latin-600.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/roboto-mono-latin-ext-700.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/roboto-mono-latin-700.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@theme {
+  /* Figma token font/family → Roboto Mono */
+  --font-sans: 'Roboto Mono', ui-monospace, monospace;
+  --font-display: 'Roboto Mono', ui-monospace, monospace;
+  --font-mono: 'Roboto Mono', ui-monospace, monospace;
+
+  /* Figma Color/Ink + Text/Secondary + Text/Accent + primary */
+  --color-background: #140d0a;
+  --color-foreground: #f5f1eb;
+  --color-card: #1a1410;
+  --color-card-foreground: #f5f1eb;
+  --color-popover: #1a1410;
+  --color-popover-foreground: #f5f1eb;
+  --color-primary: #d1894d;
+  --color-primary-foreground: #140d0a;
+  --color-secondary: #1a1410;
+  --color-secondary-foreground: #f5f1eb;
+  --color-muted: #1a1410;
+  --color-muted-foreground: #b39463;
+  --color-text-secondary: #cfb28c;
+  --color-text-accent: #e89b55;
+  /* Figma Color/Secondary (placeholder / muted UI) */
+  --color-placeholder: #b39463;
+  --color-accent: #2a211c;
+  --color-accent-foreground: #e89b55;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafaf9;
+  --color-border: #2a2a2a;
+  --color-input: #2a2a2a;
+  --color-ring: #d1894d;
+  --color-success: #22c55e;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased min-h-dvh;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--color-muted) 0%,
+    #333 50%,
+    var(--color-muted) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-shimmer {
+    animation: none;
+  }
+}
+
+/* Dual-thumb price range (Figma Faixa de preço) */
+.range-thumb {
+  pointer-events: none;
+}
+
+.range-thumb::-webkit-slider-thumb {
+  pointer-events: auto;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 9999px;
+  background: var(--color-primary);
+  border: 0;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+.range-thumb::-moz-range-thumb {
+  pointer-events: auto;
+  height: 14px;
+  width: 14px;
+  border-radius: 9999px;
+  background: var(--color-primary);
+  border: 0;
+  cursor: pointer;
+}
+
+.range-thumb::-webkit-slider-runnable-track {
+  height: 2px;
+  background: transparent;
+}
+
+.range-thumb::-moz-range-track {
+  height: 2px;
+  background: transparent;
+}
+
+/* Sonner — alinhado aos tokens Kurio */
+.kurio-toast {
+  font-family: var(--font-sans) !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5) !important;
+}
+
+.kurio-toast-title {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.01em;
+}
+
+.kurio-toast-description {
+  color: var(--color-muted-foreground) !important;
+  font-size: 12px !important;
+}
+
+.kurio-toast-close {
+  background: var(--color-card) !important;
+  border-color: var(--color-border) !important;
+  color: var(--color-foreground) !important;
+  border-radius: 6px !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.kurio-toast-close:hover {
+  background: var(--color-accent) !important;
+  border-color: #3d2e24 !important;
+  color: var(--color-text-accent) !important;
+}
+
+[data-rich-colors='true'][data-sonner-toast][data-type='success'] .kurio-toast-close,
+[data-rich-colors='true'][data-sonner-toast][data-type='error'] .kurio-toast-close,
+[data-rich-colors='true'][data-sonner-toast][data-type='info'] .kurio-toast-close,
+[data-rich-colors='true'][data-sonner-toast][data-type='warning'] .kurio-toast-close {
+  background: inherit !important;
+  border-color: inherit !important;
+  color: inherit !important;
+}
